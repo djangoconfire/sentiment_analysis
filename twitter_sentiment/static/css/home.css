@@ -1,0 +1,81 @@
+.navbar{
+  background:#2c3e50;
+}
+
+.navbar .navbar-header{
+  font-weight:bold;
+  margin-left:100px;
+}
+body{
+  background: #ffffff;
+}
+.box{
+  margin-top:100px;
+  
+}
+.search-container{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.search-container input#search{
+  width: 400px;
+  height: 50px;
+  background: grey;
+  border: none;
+  font-size: 16pt;
+  color: #262626;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+  margin-left:10px;
+}
+
+.search-container input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+.search-container input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+.search-container input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+.search-container input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+.search-container .heading_tag{
+    text-align:center;
+    font-size:40px;
+    color:#34495e;
+    margin-top:40px;
+
+}
+#tweets{
+    margin-top:40px;
+    width:auto;
+    height:auto;
+    color:black;
+
+}
+.tweets_loading{
+   margin-top:20px;
+   color: green;
+   width:auto;
+}
+
+#loading{
+  margin-top:40px;
+  margin-left:20px;
+  color:green;
+  
+
+}
+

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block head %}
+	<link rel="stylesheet" href="{% static 'css/home.css'%}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/tweet.css'%}" type="text/css">
+{% endblock %}
+
+{% block js_block %}
+	<script type="text/javascript" src="{% static 'js/tweets.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/search.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+	<div class='container'>
+		<div class="box">
+			 <div class="col-md-3 input-group pull-right form-group" >
+                <span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+                <input type="text" class="filter form-control" placeholder="What you looking for?">
+			</div>
+
+			<div id="search_box" class="search-container">
+				<input type="text" id="search" name="input-search" placehosder="Search...">
+				<button class="btn btn-success" id="input-search">Search</button>
+				<button id="getcsv" class="btn btn-warning">Download CSV</button>
+				<div id="loading">Loading...</span></div>
+				<div id="tweets"></div>
+			</div>	
+
+			
+		</div>
+	</div>
+	
+{% endblock %}
