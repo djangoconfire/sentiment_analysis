@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # local-apps
     'sentiment',
+    # Third party-library
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
