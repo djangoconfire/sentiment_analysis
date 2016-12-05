@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from models import TwitterSentiment
+
+admin.site.register(TwitterSentiment)

@@ -20,4 +20,10 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # tweet url
     url(r'^twitter/', include('sentiment.urls',namespace="sentiment")),
+
+    # for api
+    #url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')).
+    url(r'^api/',include('api.urls',namespace="api")),
+
+    #url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
 ]

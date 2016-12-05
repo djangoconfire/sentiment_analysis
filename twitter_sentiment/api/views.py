@@ -1,3 +1,8 @@
 from django.shortcuts import render
+from rest_framework import generics
+from sentiment.models import TwitterSentiment 
+from serializer import TwitterSentimentSerializer
 
-# Create your views here.
+class TwitterSentimentList(generics.ListCreateAPIView):
+    queryset = TwitterSentiment.objects.all()
+    serializer_class = TwitterSentimentSerializer
