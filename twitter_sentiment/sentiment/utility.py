@@ -4,10 +4,10 @@ from textblob import TextBlob
 import re
 
 
-api_key='FCAvoUl0FrcJbMq7XuuipM3i2'
-api_secret='9mhkDaNOrHV1niThhFnHnoJ2mnXPZTv7Z8uL8COcKb8CCqTTGi'
-access_token_key= '3702383240-lnuXWb2EIKqMqbyhrISeyh1JtiX5fp7bR8QZ8AR'
-access_token_secret_key='ltH243fpcyzTN04RpiASi7Wd4Ulc1thTsryUwT90mHN11'
+api_key='xxxx'
+api_secret='xxxx'
+access_token_key= 'xxxx'
+access_token_secret_key='xxxx'
 
 
 
