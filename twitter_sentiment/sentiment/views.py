@@ -2,6 +2,7 @@ from django.shortcuts import render
 from utility import TwitterClient
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
+from models import TwitterSentiment
 
 api = TwitterClient('@ritu')
 
@@ -36,16 +37,17 @@ def tweets(request):
     negative_sentiment=0
     neutral_sentiment=0
     tweets = api.get_tweets()
-    # for tweet in tweets:
-    #     if tweet['sentiment']=='positive':
-    #         positive_sentiment+=1
-    #     elif tweet['sentiment']=='negative':
-    #         negative_sentiment+=1
-    #     else:
-    #         neutral_sentiment+=1        
+    sentiment=TwitterSentiment()
+
+    for tweet in tweets:
+        sentiment.username=tweet['user']
+        sentiment.text=tweet['text']
+        sentiment.sentiment=tweet['sentiment']
+        sentiment.save()
+         
             
     ## for debugging
     print positive_sentiment,negative_sentiment,neutral_sentiment
-    print type(tweets)
+    print tweets
 
     return JsonResponse({'data': tweets, 'count': len(tweets)})
