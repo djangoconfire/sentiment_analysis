@@ -1,4 +1,4 @@
-steps to run th eproject :--
+steps to run the eproject :--
 
 sign in with twitter account and access your consumer key and token.
 
