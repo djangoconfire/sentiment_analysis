@@ -25,11 +25,30 @@
 				<button class="btn btn-success" id="input-search">Search</button>
 				<button id="getcsv" class="btn btn-warning">Download CSV</button>
 				<div id="loading">Loading...</span></div>
+				<div id="plot_graph"></div>
 				<div id="tweets"></div>
 			</div>	
 
 			
 		</div>
+	</div>
+
+	<!--plotting graph-->
+	<div class="modal fade" id="plot-graph">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="padding:10px;margin-top:10px;">
+                    	Graphical Analysis
+                    </h4>
+                     <button type="button" style="float:right;" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                   
+                </div>
+
+                <div class="modal-body"></div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
 	</div>
 	
 {% endblock %}

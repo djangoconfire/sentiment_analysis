@@ -29,7 +29,19 @@ function load_tweets(entered_text){
 
 		        	container.html(contents);
 		        	$('#search').val(entered_text);
-		        	$('#loading').html("<p class='tweets_loading'>" + data['count'] + " Tweets loaded about&nbsp;&nbsp;<span style='text-decoration:underline;color:orange;'>"+ entered_text + "</span></p>");
+		        	$('#loading').html("<p class='tweets_loading'>" 
+		        						+ data['count'] 
+		        						+ " Tweets loaded about&nbsp;&nbsp;\
+		        						<span style='text-decoration:underline;\
+		        						color:orange;'>"
+		        						+ entered_text + "</span></p>\
+		        						<div class='col-md-3 input-group \
+		        						form-group'>\
+		        						<span class='input-group-addon'>\
+		        						<i class='fa fa-bar-chart'></i>\
+		        						</span><input class='btn btn-primary pull-right' type='button' data-toggle='modal' data-target='#plot-graph' class='filter form-control'\
+		        						value='Graphical Analysis'></div>");
+		        	$('#plot_graph').html();
 				}	    
 	    	}
 

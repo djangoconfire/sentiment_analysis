@@ -18,8 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    # tweet url
     url(r'^twitter/', include('sentiment.urls',namespace="sentiment")),
-    # url(r'^$','twitter_sentiment.views.home',name='home'),
-    # url(r'^$','sentiment.views.home',name='home'),
-    # url(r'^tweets/$','sentiment.views.tweets',name='tweets'),
 ]
